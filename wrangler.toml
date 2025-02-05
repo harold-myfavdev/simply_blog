@@ -4,24 +4,8 @@ compatibility_date = "2025-02-05"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "northwind-demo"
-database_id = "<DATABASE_ID>"
+database_name = "blogs-db"
+database_id = "xxxx-xxxx-xxxx-xxxx-xxxx"
 
 [vars]
 API_KEY = "1234567asdf"
-
-[[env.preview.d1_databases]]
-binding = "DB"
-database_name = "northwind-demo"
-database_id = "<DATABASE_ID>"
-
-[env.preview.vars]
-API_KEY = "8901234bfgd"
-
-[[env.production.d1_databases]]
-binding = "DB"
-database_name = "northwind-demo"
-database_id = "<DATABASE_ID>"
-
-[env.production.vars]
-API_KEY = "6567875fvgt"
