@@ -1,5 +1,6 @@
 name = "cf-simply-blog"
 pages_build_output_dir = "./build"
+compatibility_date = "2025-02-05"
 
 [[kv_namespaces]]
 binding = "KV"
@@ -12,3 +13,17 @@ database_id = "<DATABASE_ID>"
 
 [vars]
 API_KEY = "1234567asdf"
+
+[[env.preview.kv_namespaces]]
+binding = "KV"
+id = "<PREVIEW_NAMESPACE_ID>"
+
+[env.preview.vars]
+API_KEY = "8901234bfgd"
+
+[[env.production.kv_namespaces]]
+binding = "KV"
+id = "<PRODUCTION_NAMESPACE_ID>"
+
+[env.production.vars]
+API_KEY = "6567875fvgt"
