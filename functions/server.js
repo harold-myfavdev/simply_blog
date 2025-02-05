@@ -1,7 +1,9 @@
 export async function onRequest(context) {
+    const t0 = performance.now(); 
     // Create a prepared statement with our query
     const ps = context.env.DB.prepare("SELECT * from Customers");
     const data = await ps.all();
-    console.log(data)
+    const t1 = performance.now();     
+    console.log(`Call to doSomething took ${t1 - t0} milliseconds.`); 
     return Response.json(data);
   }
