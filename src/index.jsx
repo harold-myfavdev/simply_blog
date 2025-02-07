@@ -4,7 +4,7 @@ import '/src/index.css'
 createRoot(document.getElementById('root')).render(
   <>
     <header>
-      <img src="/public/react-logo.png" alt="react-logo" width="40px;" height="40px"/>
+      <img src={"/public/react-logo.png" }alt="react-logo" width="40px;" height="40px"/>
       <h1>React Facts</h1>
     </header>
     <main>
