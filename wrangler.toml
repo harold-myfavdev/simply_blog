@@ -1,5 +1,5 @@
 name = "cf-simply-blog"
-pages_build_output_dir = "./build"
+pages_build_output_dir = "./dist"
 compatibility_date = "2025-02-05"
 
 [[d1_databases]]
