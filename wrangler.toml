@@ -7,5 +7,7 @@ binding = "DB"
 database_name = "blogs-db"
 database_id = "xxxx-xxxx-xxxx-xxxx-xxxx"
 
-[vars]
-API_KEY = "1234567asdf"
+[[env.production.d1_databases]]
+binding = "BLOGS_DB"
+database_name = "blogs-db"
+database_id = "d7de5236-c467-4077-8b49-19b67b0d452e"
