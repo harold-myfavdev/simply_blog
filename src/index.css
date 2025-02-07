@@ -9,8 +9,8 @@
 /* CSS Custom Styles */
 
 #root {
-    /* min-width: 550px;
-    min-height: 704px; */
+    max-width: 700px;
+    min-height: 704px;    
     margin: auto;
     box-shadow: 0px 0px 10px 1px black;
     font-family: "Inter", serif;
