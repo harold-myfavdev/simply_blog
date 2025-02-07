@@ -1,88 +1,112 @@
+/* CSS Resets */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Custom Styles */
+
 #root {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    min-height: 500px;
-    margin: 10px auto;
-    border: 5px solid white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px 1px black;    
-    overflow: hidden;    
+    width: 550px;
+    height: 704px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 1px black;
+    font-family: "Inter", serif;
 }
 
-#root > * {
-    padding: 0px 30px;
-}
-
-header {
+.header {
+    background-color: #F55A5A;
     display: flex;
+    justify-content: center;
     align-items: center;
-    column-gap: 10px;
-    background-color: #21222A;
-    color: #61dafb;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0px -3px 10px 1px white;
-    z-index: 3;
+    column-gap: 7px;
+    padding: 10px;
+    color: white;
+    height: 55px;
 }
 
+.header > h1 {    
+    font-weight: 500;
+    font-size: 14.46px;
+    letter-spacing: -.075em;
+}
 
-nav > ul {
-    list-style: none;
-    display: flex;
-    column-gap: 20px;
+.header > img {
+    width: 24px;
+    height: 24px;
 }
 
 main {
-    flex-grow: 1;
-    color: white;        
-    background-color: #24282e;    
-    position: relative;
-    z-index: 2;
-}
-
-main::after {
-    position: absolute;
-    content: "";    
-    top: 100px;
-    right: 0;
-    min-width: 250px;
-    min-height: 250px;    
-    background-image: url("/public/react-logo.png");    
-    background-color: #24282e;    
-    background-repeat: no-repeat;
-    background-position: 145px 0px;
-    background-size: 85%;
-    background-blend-mode: luminosity;
-    opacity: 0.1;
-    z-index: 1;
-}
-
-main > h1 {
-    margin-top: 50px;
-}
-
-main > ul{
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    row-gap: 24px;    
-    list-style: none;
-    position: relative;        
+    row-gap: 18px;
+    padding: 45px 40px 28px 40px;    
 }
 
-main > ul > li::before {
-    content: "\2022";
-    color: #61dafb;
-    font-size: 3rem;
-    position: absolute;
-    transform: translate(-25px, -20px);    
+.postContainer {
+    display: flex;
+    column-gap: 19px;
+    max-height: 168px;
+    max-width: 470px;
 }
 
-footer {
-    background-color: #21222A;
-    color: #61dafb;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0px 3px 10px 1px white;
-    z-index: 3;
+.postContainer > img {
+    width: 125px;
+    height: 168px;
+}
+
+.postDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 0px 12px 0px;
+}
+
+.postLocation {
+    font-weight: 400;    
+    font-size: 10.24px;
+    letter-spacing: .17em;
+    display: flex;
+    align-items: center;
+}
+
+.postLocation > img {
+    width: 7px;
+    height: 9.55px;
+    margin-right: 4px;
+}
+
+.postLocation > a {
+    margin-left: 12px;
+    color: #918E9B;
+    letter-spacing: 0;
+    line-height: 13px;
+}
+
+.postTitle {
+    margin-top: 4px;
+    margin-bottom: 17px;        
+    font-weight: 700;    
+    font-size: 25px;    
+}
+
+.postDate {
+    font-weight: 700;    
+    font-size: 10.24px;    
+    line-height: 11px;
+    margin-bottom: 9px;
+}
+
+.postDesc {
+    font-weight: 400;    
+    font-size: 10.24px;    
+    line-height: 1.5em;
+}
+
+hr {    
+    height: 1px;
+    background-color: #F5F5F5;        
+    border: none;   
 }
