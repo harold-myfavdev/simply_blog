@@ -6,7 +6,7 @@
     margin: 10px auto;
     border: 5px solid white;
     border-radius: 10px;
-    box-shadow: 0px 0px 0px 1px black;
+    box-shadow: 0px 0px 0px 1px black;    
 }
 
 #root > * {
@@ -20,18 +20,33 @@ header {
     background-color: #1e1f26;
     color: #00ccff;
     border-radius: 10px 10px 0 0;
+    overflow: hidden;
 }
 
 main {
     flex-grow: 1;
     color: white;    
     border-radius: 0 0 10px 10px;
+    background-color: #24282e;    
+    position: relative;
+    z-index: 2;
+}
+
+main::after {
+    position: absolute;
+    content: "";    
+    top: 100px;
+    right: 0;
+    min-width: 250px;
+    min-height: 250px;    
     background-image: url("/public/react-logo.png");    
-    background-color: #24282e;
+    background-color: #24282e;    
     background-repeat: no-repeat;
-    background-position: 380px 100px;
-    background-size: 50%;    
-    background-blend-mode:luminosity;    
+    background-position: 145px 0px;
+    background-size: 85%;
+    background-blend-mode: luminosity;
+    opacity: 0.1;
+    z-index: 1;
 }
 
 main > h1 {
