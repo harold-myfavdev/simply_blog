@@ -1,10 +1,11 @@
 import { createRoot } from 'react-dom/client';
 import '/src/index.css'
+import reactLogo from '/public/react-logo.png'
 
 createRoot(document.getElementById('root')).render(
   <>
     <header>
-      <img src={"/public/react-logo.png" }alt="react-logo" width="40px;" height="40px"/>
+      <img src={reactLogo}alt="react-logo" width="40px;" height="40px"/>
       <h1>React Facts</h1>
     </header>
     <main>
