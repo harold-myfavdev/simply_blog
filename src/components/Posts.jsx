@@ -32,7 +32,7 @@ export default function Posts() {
         },
 
     ]
-    console.log(postsData.length)
+
     return (
         <>
             {postsData.map((post, i)=>(
