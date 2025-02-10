@@ -12,7 +12,7 @@
     max-width: 700px;
     min-height: 50vh;    
     margin: 10px auto;
-    box-shadow: 0px 0px 10px 1px black;
+    box-shadow: 0px 0px 10px 1px white, 0px 0px 10px 1px black;
     font-family: "Inter", serif;    
     border-radius: 10px;
     overflow: hidden;
@@ -128,4 +128,9 @@ hr {
 
 hr:last-child {
     display: none;
+}
+
+.postImg {
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px white, 0px 0px 10px 1px gray;
 }
