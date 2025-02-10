@@ -1,136 +1,86 @@
 /* CSS Resets */
-
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;    
+}
+
+/* Declare CSS Variables */
+:root {
+    --text-color: black;
+    --bg-color: white;
 }
 
 /* CSS Custom Styles */
-
-#root {
-    max-width: 700px;
-    min-height: 50vh;    
-    margin: 10px auto;
-    box-shadow: 0px 0px 10px 1px white, 0px 0px 10px 1px black;
-    font-family: "Inter", serif;    
-    border-radius: 10px;
-    overflow: hidden;
+body {
+    max-width: 1440px;
+    line-height: 24px;
+    font-family: Inter, 'Times New Roman', Times, serif;
 }
 
-.header {
-    background-color: #F55A5A;
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 7px;
-    padding: 10px;
-    color: white;
-    height: 55px;
+    margin: 30px 112px 0px 112px;
+    max-width: 1216px;
 }
 
-.header > h1 {    
-    font-weight: 500;
-    font-size: 14.46px;
-    letter-spacing: -.075em;
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
 }
 
-.header > img {
-    width: 24px;
-    height: 24px;
+.navbar-brand {
+    margin-right: auto;
 }
 
-main {
+.navbar-nav {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 18px;
-    padding: 45px 40px 28px 40px;    
-    max-width: 600px;
-    margin: 0 auto;
-    /* border: 1px solid red; */
+    column-gap: 14px;
+    margin-right: 22px;    
 }
 
-.postContainer {
-    /* border: 1px solid red; */
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 19px;
-    /* max-height: 168px; */
-    /* max-width: 470px;     */
-    text-overflow: ellipsis;
-    text-align: justify;
+.navbar-nav > .nav-items {
+    padding: 8px;
 }
 
-.postContainer > img {
-    max-width: 125px;
-    height: 168px;
+.navbar-toggle {
+    border: 0px;
 }
 
-.postDetails {
-    max-width: 345px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 12px 0px 12px 0px;
-}
-
-.postLocation {
-    font-weight: 400;    
-    font-size: 10.24px;
-    letter-spacing: .17em;
-    display: flex;
-    align-items: center;
-}
-
-.postLocation > img {
-    width: 7px;
-    height: 9.55px;
-    margin-right: 4px;
-}
-
-.postLocation > a {
-    margin-left: 12px;
-    color: #918E9B;
-    letter-spacing: 0;
-    line-height: 13px;
-}
-
-.postTitle {
-    margin-top: 4px;
-    margin-bottom: 17px;        
-    font-weight: 700;    
-    font-size: 25px;    
-}
-
-.postDate {
-    font-weight: 700;    
-    font-size: 10.24px;    
-    line-height: 11px;
-    margin-bottom: 9px;
-}
-
-.postDesc {
-    font-weight: 400;    
-    font-size: 10.24px;    
-    line-height: 1.5em;
-}
-
-hr {    
-    height: 1.5px;
-    width: 100%;
-    background-color: #F5F5F5;        
-    border: none;   
-}
-
-hr:last-child {
+.navbar-toggle > input[type="radio"]{
     display: none;
 }
 
-.postImg {
-    border-radius: 5px;
-    box-shadow: 0px 0px 1px 1px white, 0px 0px 10px 1px gray;
+.navbar-toggle > .image-container {
+    position: relative;
+    width: 96px;
+    height: 40px;    
+}
+
+.navbar-toggle > .image-container > img {
+    width: 100%;  
+    /* height: 100%;  */
+    /* object-fit: fill;  */
+    /* position: absolute;  */
+}
+
+/* Default: Show light mode image, hide dark mode */
+#light-img {
+    display: block;
+
+}
+#dark-img {
+    display: none;
+}
+
+/* If dark mode is selected, show dark mode image */
+#dark:checked ~ .image-container #light-img {
+    display: none;
+}
+#dark:checked ~ .image-container #dark-img {
+    display: block;
 }
