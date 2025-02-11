@@ -107,7 +107,8 @@ body {
 
 .header-title {    
     line-height: normal;
-    font-size: clamp(60px, 8vw + 1em, 189px); /* 60px, 124px, 189px */
+    font-size: clamp(48px, 11vw + 1rem, 189px); /* 60px, 124px, 189px */
+    /* font-size: 12vw; */
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -121,16 +122,12 @@ body {
 @media (max-width: 833px) {
     .navbar {
         padding: 0px 10px;
+        margin-bottom: 20px;        
     }
     
     .navbar-nav, .navbar-toggle {
         display: none;
-    }
-    
-    .header-title {
-        font-size: 57px;
-        padding: 0px 10px;        
-    }
+    }       
 
     .navbar-burger-menu {
         display: flex;
@@ -139,6 +136,10 @@ body {
         align-items: center;        
         height: 32px;
         width: 32px;
+    }
+
+    .header-title {
+        margin-top: 20px;
     }
 }
 
