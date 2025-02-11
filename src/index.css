@@ -12,6 +12,10 @@
     --bg-color: white;
 }
 
+body {
+    background-color: var(--bg-color);
+}
+
 /* CSS Custom Styles */
 #root {
     margin: 0 auto;
@@ -26,7 +30,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 30px 0px 50px 0px;    
-    padding: 10px 0px;
+    padding: 10px 0px;   
 }
 
 .navbar a {
@@ -38,6 +42,16 @@
 .navbar-brand {
     margin-right: auto;
     letter-spacing: 2px;
+}
+
+.navbar-burger-menu {    
+    display: none;
+}
+
+.navbar-burger-menu > span {
+    width: 100%;
+    border: 2.67px solid #1a1a1a;
+    border-radius: 2.67px;
 }
 
 .navbar-nav {
@@ -93,12 +107,44 @@
 
 .header-title {    
     line-height: normal;
-    text-align: center;
-    font-size: 189px;
+    font-size: clamp(60px, 8vw + 1em, 189px); /* 60px, 124px, 189px */
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     border-top: 1px solid;
     border-bottom: 1px solid;
     margin-top: 50px;
+    text-align: center;
+    /* padding: 0px 10px; */
+}
+
+@media (max-width: 833px) {
+    .navbar {
+        padding: 0px 10px;
+    }
+    
+    .navbar-nav, .navbar-toggle {
+        display: none;
+    }
+    
+    .header-title {
+        font-size: 57px;
+        padding: 0px 10px;        
+    }
+
+    .navbar-burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;        
+        height: 32px;
+        width: 32px;
+    }
+}
+
+@media (max-width: 1216px) {
+    .navbar {
+        padding: 0px 10px;
+    }
+
 }
