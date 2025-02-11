@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;    
+    /* border: 1px solid red; */
 }
 
 /* Declare CSS Variables */
@@ -12,18 +13,20 @@
 }
 
 /* CSS Custom Styles */
-body {
-    max-width: 1440px;
+#root {
+    margin: 0 auto;
+    max-width: 1216px;
     line-height: 24px;
     font-family: Inter, 'Times New Roman', Times, serif;
 }
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 112px 0px 112px;
-    max-width: 1216px;
+    margin: 30px 0px 50px 0px;    
+    padding: 10px 0px;
 }
 
 .navbar a {
@@ -34,21 +37,22 @@ body {
 
 .navbar-brand {
     margin-right: auto;
+    letter-spacing: 2px;
 }
 
 .navbar-nav {
     list-style: none;
     display: flex;
     column-gap: 14px;
-    margin-right: 22px;    
+    margin-right: 14px;    
 }
 
 .navbar-nav > .nav-items {
     padding: 8px;
 }
 
-.navbar-toggle {
-    border: 0px;
+.navbar-toggle {    
+    border: 0px;    
 }
 
 .navbar-toggle > input[type="radio"]{
@@ -56,25 +60,27 @@ body {
 }
 
 .navbar-toggle > .image-container {
-    position: relative;
-    width: 96px;
-    height: 40px;    
+    position: relative;    
+    /* border: 1px solid red;    */
+    height: 100%;
+    display: flex;
+    align-items: center;    
 }
 
 .navbar-toggle > .image-container > img {
-    width: 100%;  
-    /* height: 100%;  */
-    /* object-fit: fill;  */
-    /* position: absolute;  */
+    display: block;
+    width: 96px;
+    height: 40px; 
+    object-fit: cover;    
 }
 
 /* Default: Show light mode image, hide dark mode */
 #light-img {
-    display: block;
+    display: none;
 
 }
 #dark-img {
-    display: none;
+    display: block;
 }
 
 /* If dark mode is selected, show dark mode image */
@@ -83,4 +89,16 @@ body {
 }
 #dark:checked ~ .image-container #dark-img {
     display: block;
+}
+
+.header-title {    
+    line-height: normal;
+    text-align: center;
+    font-size: 189px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-top: 50px;
 }

@@ -3,23 +3,26 @@ import toggleLight from '/src/assets/toggle_light.png';
 
 export default function Header() {
     return (
-        <header className="navbar">
-            <a href="#" className='navbar-brand'>SimplyBlog</a>
-            <ul className='navbar-nav'>
-                <li className="nav-items"><a className="nav-links" href="/blog">Blog</a></li>
-                <li className="nav-items"><a className="nav-links" href="/projects">Projects</a></li>
-                <li className="nav-items"><a className="nav-links" href="/about">About</a></li>
-                <li className="nav-items"><a className="nav-links" href="/newsletter">Newsletter</a></li>                
-            </ul>
-            <fieldset className='navbar-toggle' aria-label='Choose dark mode or light mode'>
-                <input type="radio" className='navbar-toggle-item' id="light" value="light" name='theme'/>
-                <input type="radio" className='navbar-toggle-item' id="dark" value="dark" name='theme' checked/>
-                
-                <div className="image-container">
-                    <img src={toggleLight} id="light-img" alt="Light Mode" />
-                    <img src={toggleDark} id="dark-img" alt="Dark Mode" />
-                </div>
-            </fieldset>
+        <header className='header'>
+            <nav className="navbar">
+                <a href="/" className='navbar-brand'>SimplyBlog</a>
+                <ul className='navbar-nav'>
+                    <li className="nav-items"><a className="nav-links" href="/blog">Blog</a></li>
+                    <li className="nav-items"><a className="nav-links" href="/projects">Projects</a></li>
+                    <li className="nav-items"><a className="nav-links" href="/about">About</a></li>
+                    <li className="nav-items"><a className="nav-links" href="/newsletter">Newsletter</a></li>                
+                </ul>
+                <fieldset className='navbar-toggle' aria-label='Choose dark mode or light mode'>
+                    <input type="radio" className='navbar-toggle-item' id="light" value="light" name='theme'/>
+                    <input type="radio" className='navbar-toggle-item' id="dark" value="dark" name='theme'/>
+                    
+                    <div className="image-container">
+                        <img src={toggleLight} id="light-img" alt="Light Mode" />
+                        <img src={toggleDark} id="dark-img" alt="Dark Mode" />
+                    </div>
+                </fieldset>
+            </nav>
+            <h1 className='header-title'>SIMPLY BLOG</h1>
         </header>
     )
 }
