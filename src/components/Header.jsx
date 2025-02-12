@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import toggleDark from '/src/assets/toggle_dark.png';
 import toggleLight from '/src/assets/toggle_light.png';
+import './header.css';
 
 export default function Header() {
     const [isActive, setIsActive] = useState("");
