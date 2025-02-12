@@ -137,36 +137,40 @@
         top: 32.5px;
         right: 10px;
         z-index: 2;
-        background-color: rgba(173, 216, 230, 0.90);     
+        /* background-color: rgba(173, 216, 230, 0.90);      */
+        background-color: rgba(0, 0, 0, 0.34);        
+    }
+
+    .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav .nav-links {
+        color: white;
     }
 
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav > .nav-items {
         padding: 4px 8px;
     }
 
-    .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav > .nav-items:hover {        
+    .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav > .nav-items:hover,
+    .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav .nav-links:hover {        
         background-color: white;
+        color: black;
         width: 150px;
     }
 
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-toggle {
         display: block  ;
-        /* margin-left: auto; */
         order: 1;
         flex-basis: 100%;        
         justify-items: end;                
         position: absolute;
         top: 0px;
         right: 10px;
-        /* height: 32px; */
         z-index: 2;
-        background-color: rgba(173, 216, 230, 0.90);
+        /* background-color: rgba(173, 216, 230, 0.90); */
+        /* background-color: rgba(0, 0, 0, 0.226);         */
         border: 0;        
     }       
     
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-toggle > .image-container {
-        /* padding: 0px 8px; */
-        /* width: 150px;         */
         height: 32px;
         border-top: 0;
         border-right: 0;
@@ -174,9 +178,7 @@
     }
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-toggle > .image-container > img {
         height: 28px;
-        /* background-color: red; */
     }
-
 
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) {
         border-radius: 5px 0px 0px 0px;
@@ -184,8 +186,13 @@
         margin-right: auto;
         width: 150px;
         padding-left: 8px;               
-        background-color: rgba(173, 216, 230, 0.90);
-        /* transition: all 3s ease-in; */
+        /* background-color: rgba(173, 216, 230, 0.90); */
+        background-color: rgba(0, 0, 0, 0.50);        
+    }
+
+    .navbar-burger-menu.active > span {        
+        border: 2.67px solid white;        
+        transition: all 0.3s ease-in-out;
     }
 
     .navbar-burger-menu {        
