@@ -3,18 +3,16 @@ import toggleDark from '/src/assets/toggle_dark.png';
 import toggleLight from '/src/assets/toggle_light.png';
 
 export default function Header() {
-    const [isChecked, setIsChecked] = useState("checked");
-    function handleClick() {
-        setIsChecked((prevValue) =>  prevValue == "checked" ? "notChecked" : "checked");
-        console.log(isChecked);
-        // console.log("im click");
+    const [isActive, setIsActive] = useState("");
+    function toggleIsActive() {
+        setIsActive((prevValue) =>  prevValue == "" ? "active" : "");        
     }
 
     return (
         <header className='header'>
             <nav className="navbar">
                 <a href="/" className='navbar-brand'>SimplyBlog</a>
-                <div className='navbar-burger-menu'>
+                <div className={("navbar-burger-menu " + isActive).trim()} onClick={toggleIsActive}>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -30,8 +28,8 @@ export default function Header() {
                     <input type="radio" className='navbar-toggle-item' id="dark" value="dark" name='theme'/>
                     
                     <div className="image-container">
-                        <img onClick={handleClick} src={toggleLight} id="light-img" alt="Light Mode" />
-                        <img onClick={handleClick} src={toggleDark} id="dark-img" alt="Dark Mode" />
+                        <img src={toggleLight} id="light-img" alt="Light Mode" />
+                        <img src={toggleDark} id="dark-img" alt="Dark Mode" />
                     </div>
                 </fieldset>
             </nav>
