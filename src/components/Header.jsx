@@ -12,10 +12,12 @@ export default function Header() {
         <header className='header'>
             <nav className="navbar">
                 <a href="/" className='navbar-brand'>SimplyBlog</a>
-                <div className={("navbar-burger-menu " + isActive).trim()} onClick={toggleIsActive}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div className='navbar-burger-menu-wrapper'>
+                    <div className={("navbar-burger-menu " + isActive).trim()} onClick={toggleIsActive}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
                 <ul className='navbar-nav'>
                     <li className="nav-items"><a className="nav-links" href="/blog">Blog</a></li>
