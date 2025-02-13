@@ -120,6 +120,7 @@
 
     .navbar-brand{
         flex-basis: calc(100% - 150px);        
+        line-height: 32px;
         margin-right: 0;
     }   
 
@@ -181,6 +182,9 @@
     }
 
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) {
+        position: absolute;
+        right: 10px;
+        top: 0;
         border-radius: 5px 0px 0px 0px;
         border-right: 0;
         margin-right: auto;
