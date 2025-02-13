@@ -1,0 +1,27 @@
+.container {
+    margin: auto;
+    border: 1px solid black;
+    width: 250px;
+    height: 400px;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-content: flex-start; */
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    align-content: start;
+}
+
+.h-100 {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+.h-50 {
+    border: 1px solid black;
+    height: 50px;
+    width: 100px;
+}
