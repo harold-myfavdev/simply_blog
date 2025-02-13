@@ -15,7 +15,6 @@ export default function Post(props) {
                     <p className="postDesc">{props.postDesc}</p>
                 </div>
             </figure>
-            <hr />
         </>
     )
 }

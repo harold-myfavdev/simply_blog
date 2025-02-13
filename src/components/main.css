@@ -1,0 +1,23 @@
+section {
+    /* border: 1px solid black; */
+    padding: 30px 0;
+    /* overflow: hidden; */
+    width: 100%;
+}
+
+section .blog-posts-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+    /* align-items: center; */
+}
+
+section .blog-posts-wrapper > .postContainer {
+    flex-basis: 592px;
+}
+
+/* figure.postContainer > img {
+    object-fit: contain;
+    width: 592px;
+} */
