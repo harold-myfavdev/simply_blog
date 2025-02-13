@@ -142,18 +142,22 @@
     }
 
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav .nav-links {
-        color: white;
-    }
-
-    .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav > .nav-items {
+        display: block;
+        color: white;        
+        width: 150px;
         padding: 4px 8px;
     }
+    
+    .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav > .nav-items {
+        /* color: black; */
+        padding: 0;
+        width: 150px;
+    }
 
-    .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav > .nav-items:hover,
+    /* .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav > .nav-items:hover, */
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav .nav-links:hover {        
         background-color: white;
         color: black;
-        width: 150px;
     }
 
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-toggle {
