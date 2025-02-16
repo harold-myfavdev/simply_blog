@@ -31,8 +31,22 @@ export default function Header() {
                     <input type="radio" className='navbar-toggle-item' id="dark" value="dark" name='theme'/>
                     
                     <div className="image-container">
-                        <img src={toggleLight} id="light-img" alt="Light Mode" />
-                        <img src={toggleDark} id="dark-img" alt="Dark Mode" />
+                        <span className='circle'></span>
+                        <div className='sun-moon-container'>
+                            <span className='moon'></span>
+                            <div className='sun'>
+                                <span className="sun-ray top"></span>
+                                <span className="sun-ray top-right"></span>
+                                <span className="sun-ray right"></span>
+                                <span className="sun-ray bottom-right"></span>
+                                <span className="sun-ray bottom"></span>
+                                <span className="sun-ray bottom-left"></span>
+                                <span className="sun-ray left"></span>
+                                <span className="sun-ray top-left"></span>
+                            </div>
+                        </div>
+                        {/* <img src={toggleLight} id="light-img" alt="Light Mode" />
+                        <img src={toggleDark} id="dark-img" alt="Dark Mode" /> */}
                     </div>
                 </fieldset>
             </nav>
