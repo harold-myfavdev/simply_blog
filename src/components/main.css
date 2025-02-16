@@ -5,14 +5,13 @@ section {
 
 section.blog-posts {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
     column-gap: 22px;
-    /* flex-direction: column;     */
 }
 
 section#recent-blog-posts {
     height: 432px;
-    width: 1240px;
+    max-width: 1240px;
 }
 
 section.blog-posts > .blog-posts-header {
@@ -27,8 +26,7 @@ section.blog-posts > .blog-posts-wrapper {
 
 section.blog-posts > .blog-preview-1, .blog-preview-2{
     /* border: 1px solid red; */
-    flex: 1 1 592px;
-    height: 432px;
+    flex: 1 0 432px;    
     overflow: hidden;
     flex-direction: column;
 }
@@ -38,15 +36,35 @@ section.blog-posts > .blog-preview-1 .postImg{
     height: 228px;
 }
 
-section.blog-posts > .blog-preview-2 .postImg{
-    /* flex-basis: 320px; */
-    width: 320px;
-    /* height: 200px; */
+section.blog-posts > .blog-preview-2 .postImg{    
+    flex-basis: 1 1 320px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
 
+section.blog-posts > .blog-preview-2 div:has(.postImg){
+    flex: 1 0 320px;
+    /* width: 320px; */
+    height: 200px;    
+}
+
 .blog-preview-2 .postContainer {
-    display: flex;    
+    display: flex;   
+    flex-wrap: wrap;    
     column-gap: 24px;
+}
+
+section.blog-posts > .blog-preview-2 .postDetails {
+    flex: 1 0 248px;
+    width: 248px;
+    height: 188px;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+section.blog-posts > .blog-preview-2 .postDetails p {
+    text-overflow: ellipsis;
+    text-align: justify;
 }

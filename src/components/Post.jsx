@@ -3,7 +3,9 @@ export default function Post(props) {
     return (
         <>
             <figure className="postContainer">
-                <img src={props.postImg} alt={props.postImgAlt} className="postImg"/>
+                <div className="postImg-wrapper">
+                    <img src={props.postImg} alt={props.postImgAlt} className="postImg"/>
+                </div>
                 <div className="postDetails">
                     <p className="postLocation">
                         <img src={props.marker} alt="Location Marker" />
