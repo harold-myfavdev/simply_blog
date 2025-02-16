@@ -3,9 +3,10 @@ import Marker from '/src/assets/Marker.svg';
 import Post from './Post';
 import postsData from '../api/data';
 
-export default function Posts() {
-    console.log(postsData);
-    const posts = postsData.map((post)=>(
+export default function Posts(props) {
+    const postsDataLimit = postsData.slice(0, props.limit) /* Limit num of post rendered */ 
+
+    const posts = postsDataLimit.map((post)=>(
             <Post 
                 key={post.id}
                 marker={Marker} 

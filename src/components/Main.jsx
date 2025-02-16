@@ -7,7 +7,10 @@ export default function Main() {
             <section className='blog-posts' id='recent-blog-posts'>   
                 <h2>Recent blog posts</h2>            
                 <div className='blog-posts-wrapper'>
-                    <Posts />
+                    <Posts limit={1} />
+                </div>
+                <div className='blog-posts-wrapper'>
+                    <Posts limit={2} />
                 </div>
             </section>
         </main>
