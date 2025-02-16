@@ -131,7 +131,7 @@
         margin-left: auto;
         margin-right: 0;
         flex-direction: column;
-        width: 150px;                          
+        width: calc( 100% - 20px );                          
         place-content: end;
         place-self: end;
         place-items: start;
@@ -139,24 +139,27 @@
         top: 32.5px;
         right: 10px;
         z-index: 2;
-        background-color: rgba(0, 0, 0, 0.34);        
+        background-color: white;        
     }
 
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav .nav-links {
         display: block;
-        color: white;        
-        width: 150px;
+        color: black;        
+        width: 100%;
         padding: 4px 8px;
     }
     
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav > .nav-items {
         padding: 0;
-        width: 150px;
+        width: 100%;
     }
 
-    .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav .nav-links:hover {        
-        background-color: white;
-        color: black;
+    .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav .nav-links:hover,
+    .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active):hover,         
+    .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active):hover span{        
+        background-color: black;
+        color: white;
+        border: 2.67px solid white;   
     }
 
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-toggle {
@@ -188,13 +191,13 @@
         border-radius: 5px 0px 0px 0px;
         border-right: 0;
         margin-right: auto;
-        width: 150px;
+        width: calc( 100% - 20px);
         padding-left: 8px;               
-        background-color: rgba(0, 0, 0, 0.50);        
+        background-color: white;        
     }
 
     .navbar-burger-menu.active > span {        
-        border: 2.67px solid white;        
+        border: 2.67px solid black;        
         transition: all 0.3s ease-in-out;
     }
 
