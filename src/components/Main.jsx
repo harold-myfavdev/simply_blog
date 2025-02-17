@@ -12,9 +12,9 @@ export default function Main() {
                 <div className='blog-posts-wrapper blog-preview-2'>
                     <Posts limit={2} />
                 </div>
-                {/* <div className='blog-posts-wrapper blog-preview-3'>
+                <div className='blog-posts-wrapper blog-preview-3'>
                     <Posts limit={1} />
-                </div> */}
+                </div>
             </section>
         </main>
     )

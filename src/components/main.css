@@ -1,3 +1,6 @@
+main {
+    padding: 0 10px;
+}
 section {
     padding: 30px 0;
     width: 100%;
@@ -6,7 +9,7 @@ section {
 section.blog-posts {
     display: flex;
     flex-wrap: wrap;   
-    column-gap: 22px;
+    gap: 32px;
 }
 
 section#recent-blog-posts {
@@ -24,11 +27,18 @@ section.blog-posts > .blog-posts-wrapper {
     row-gap: 22px
 }
 
-section.blog-posts > .blog-preview-1, .blog-preview-2{
+section.blog-posts > .blog-preview-1{
     /* border: 1px solid red; */
-    flex: 1 0 432px;    
+    flex: 1 1 432px;    
     overflow: hidden;
-    flex-direction: column;
+    flex-direction: column;    
+}
+
+section.blog-posts > .blog-preview-2{
+    /* border: 1px solid red; */
+    flex: 1 1 432px;    
+    overflow: hidden;
+    flex-direction: column;    
 }
 
 section.blog-posts > .blog-preview-1 .postImg{
@@ -37,7 +47,15 @@ section.blog-posts > .blog-preview-1 .postImg{
 }
 
 section.blog-posts > .blog-preview-2 .postImg{    
-    flex-basis: 1 1 320px;
+    /* flex-basis: 1 1 320px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+section.blog-posts > .blog-preview-2 .postImg,        
+section.blog-posts > .blog-preview-3 .postImg{        
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -50,10 +68,21 @@ section.blog-posts > .blog-preview-2 div:has(.postImg){
     height: 200px;    
 }
 
+section.blog-posts > .blog-preview-3 div:has(.postImg){    
+    flex: 1 1 592px;    
+    height: 246px;    
+}
+
 .blog-preview-2 .postContainer {
     display: flex;   
     flex-wrap: wrap;    
     column-gap: 24px;
+}
+
+.blog-preview-3 .postContainer {
+    display: flex;   
+    flex-wrap: wrap;    
+    gap: 22px
 }
 
 section.blog-posts > .blog-preview-2 .postDetails {
@@ -67,4 +96,14 @@ section.blog-posts > .blog-preview-2 .postDetails {
 section.blog-posts > .blog-preview-2 .postDetails p {
     text-overflow: ellipsis;
     text-align: justify;
+}
+
+section.blog-posts > .blog-preview-3 .postDetails {
+    flex: 1 0 592px;
+}
+
+section.blog-posts > .blog-preview-3 {
+    flex: 1 0 432px;    
+    overflow: hidden;
+    flex-direction: column;
 }
