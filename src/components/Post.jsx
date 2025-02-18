@@ -8,9 +8,9 @@ export default function Post(props) {
                 </div>
                 <div className="postDetails">
                     <p className="postLocation">
+                        <a href={props.map} className="googleMap">View on Google Maps</a>
                         <img src={props.marker} alt="Location Marker" />
                         {props.country}
-                        <a href={props.map} className="googleMap">View on Google Maps</a>
                     </p>
                     <h2 className="postTitle">{props.postTitle}</h2>
                     <p className="postDate">{props.postDateRange}</p>
