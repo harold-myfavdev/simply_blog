@@ -1,4 +1,3 @@
-import MountFuji from '/src/assets/Mount Fuji.png';
 import Marker from '/src/assets/Marker.svg';
 import Post from './Post';
 import postsData from '../api/data';
