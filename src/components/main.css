@@ -77,17 +77,17 @@ figure.postContainer {
 
 .blog-preview-1 figure.postContainer > div.postDetails {
     flex: 1 1 592px;
-    height: 172px;
+    /* height: 172px; */
 }
 
 .blog-preview-2 figure.postContainer > div.postDetails {
     flex: 1 1 228px;
-    height: 200px;
+    /* height: 200px; */
 }
 
 .blog-preview-3 figure.postContainer > div.postDetails {
     flex: 1 1 592px;
-    height: 246px;
+    /* height: 246px; */
 }
 
 figure.postContainer > div.postImg-wrapper > img {
@@ -123,7 +123,7 @@ div.postDetails > .postLocation > img {
 
 /* Temporary CSS */
 section.blog-posts, section.blog-posts > * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 section.blog-posts img {
