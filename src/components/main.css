@@ -2,13 +2,20 @@
 section.blog-posts img {
     display: block;
 }
-
 /* End CSS Resets */
+
+/* Section Parent CSS */
+section.blog-posts {
+    margin-top: 60px;
+}
+/* End Section Parent CSS */
 
 /* First Level Flex */
 section.blog-posts {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+    column-gap: 28px;
+    row-gap: 30px;
 }
 
 section.blog-posts > .blog-posts-header {
@@ -25,6 +32,7 @@ section.blog-posts > .blog-preview-2 {
 
 section.blog-posts > .blog-preview-3 {
     flex: 1 1 100%;
+    margin-top: 30px;
 }
 /* End First Level Flex */
 
@@ -33,6 +41,8 @@ section.blog-posts > .blog-preview-3 {
 section.blog-posts > .blog-preview-2 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    row-gap: 32px;
 }
 
 section.blog-posts > .blog-preview-3 {
@@ -45,40 +55,74 @@ section.blog-posts > .blog-preview-3 {
 figure.postContainer {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 32px
 }
 
 .blog-preview-1 figure.postContainer > div.postImg-wrapper {
     flex: 1 1 592px;
+    height: 228px;
 }
 
 .blog-preview-2 figure.postContainer > div.postImg-wrapper {
     flex: 1 1 320px;
+    height: 200px;
 }
 
 .blog-preview-3 figure.postContainer > div.postImg-wrapper {
     flex: 1 1 592px;
+    height: 246px;
+}
+
+.blog-preview-1 figure.postContainer > div.postDetails {
+    flex: 1 1 592px;
+    height: 172px;
 }
 
 .blog-preview-2 figure.postContainer > div.postDetails {
     flex: 1 1 228px;
+    height: 200px;
 }
 
 .blog-preview-3 figure.postContainer > div.postDetails {
     flex: 1 1 592px;
+    height: 246px;
 }
 
 figure.postContainer > div.postImg-wrapper > img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 /* End Third Level Flex */
 
+/* Fourth Level Flex */
+div.postDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 12px;  
+    overflow: hidden;    
+}
 
+div.postDetails > .postDesc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
+}
+
+div.postDetails > .postLocation > img {
+    display: inline;    
+    margin-left: 10px;
+}
+/* End Fourth Level Flex */
 
 /* Temporary CSS */
-
 section.blog-posts, section.blog-posts > * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 section.blog-posts img {
@@ -86,3 +130,4 @@ section.blog-posts img {
     height: 228px; */
     /* display: none; */
 }
+/* End Temporary CSS */
