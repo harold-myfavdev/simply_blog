@@ -100,7 +100,7 @@ figure.postContainer > div.postImg-wrapper > img {
 div.postDetails {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     row-gap: 12px;  
     overflow: hidden;    
 }
