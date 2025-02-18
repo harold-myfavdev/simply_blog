@@ -27,10 +27,8 @@ export default function Header() {
                     <li className="nav-items"><a className="nav-links" href="/newsletter">Newsletter</a></li>                
                 </ul>
                 <fieldset className='navbar-toggle' aria-label='Choose dark mode or light mode'>
-                    <input type="radio" className='navbar-toggle-item' id="light" value="light" name='theme'/>
-                    <input type="radio" className='navbar-toggle-item' id="dark" value="dark" name='theme'/>
-                    
-                    <div className="image-container">
+                    <input type="checkbox" className='navbar-toggle-theme' id="toggle-theme" value="light" name='theme'/>
+                    <label htmlFor="toggle-theme" className="image-container">
                         <span className='circle'></span>
                         <div className='sun-moon-container'>
                             <span className='moon'></span>
@@ -45,9 +43,7 @@ export default function Header() {
                                 <span className="sun-ray top-left"></span>
                             </div>
                         </div>
-                        {/* <img src={toggleLight} id="light-img" alt="Light Mode" />
-                        <img src={toggleDark} id="dark-img" alt="Dark Mode" /> */}
-                    </div>
+                    </label>                    
                 </fieldset>
             </nav>
             <h1 className='header-title'>SIMPLY BLOG</h1>
