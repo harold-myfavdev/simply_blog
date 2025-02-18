@@ -73,6 +73,7 @@
 
 .navbar-toggle > input[type="checkbox"]:checked{
     background: linear-gradient(180deg,#777,#3a3a3a);
+    box-shadow: inset 0px 5px 15px rgb(0, 0, 0), inset 0px -5px 15px rgba(212, 199, 199, 0.932);
 }
 
 .navbar-toggle:has(input[type="checkbox"]:checked) > .image-container > .circle {    
