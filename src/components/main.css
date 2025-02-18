@@ -124,7 +124,7 @@ div.postDetails > .postLocation > img {
 
 /* Temporary CSS */
 section.blog-posts, section.blog-posts > * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 section.blog-posts img {
