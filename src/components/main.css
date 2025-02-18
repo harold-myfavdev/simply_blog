@@ -1,109 +1,88 @@
-main {
-    padding: 0 10px;
-}
-section {
-    padding: 30px 0;
-    width: 100%;
+/* CSS Resets */
+section.blog-posts img {
+    display: block;
 }
 
+/* End CSS Resets */
+
+/* First Level Flex */
 section.blog-posts {
     display: flex;
-    flex-wrap: wrap;   
-    gap: 32px;
-}
-
-section#recent-blog-posts {
-    height: 432px;
-    max-width: 1240px;
+    flex-wrap: wrap;
 }
 
 section.blog-posts > .blog-posts-header {
     flex: 1 1 100%;
-    margin-bottom: 15px;
 }
 
-section.blog-posts > .blog-posts-wrapper {
-    display: flex;
-    row-gap: 22px
+section.blog-posts > .blog-preview-1 {
+    flex: 1 1 592px;
 }
 
-section.blog-posts > .blog-preview-1{
-    /* border: 1px solid red; */
-    flex: 1 1 432px;    
-    overflow: hidden;
-    flex-direction: column;    
-}
-
-section.blog-posts > .blog-preview-2{
-    /* border: 1px solid red; */
-    flex: 1 1 432px;    
-    overflow: hidden;
-    flex-direction: column;    
-}
-
-section.blog-posts > .blog-preview-1 .postImg{
-    width: 100%;
-    height: 228px;
-}
-
-section.blog-posts > .blog-preview-2 .postImg{    
-    /* flex-basis: 1 1 320px; */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-section.blog-posts > .blog-preview-2 .postImg,        
-section.blog-posts > .blog-preview-3 .postImg{        
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-section.blog-posts > .blog-preview-2 div:has(.postImg){
-    flex: 1 0 320px;
-    /* width: 320px; */
-    height: 200px;    
-}
-
-section.blog-posts > .blog-preview-3 div:has(.postImg){    
-    flex: 1 1 592px;    
-    height: 246px;    
-}
-
-.blog-preview-2 .postContainer {
-    display: flex;   
-    flex-wrap: wrap;    
-    column-gap: 24px;
-}
-
-.blog-preview-3 .postContainer {
-    display: flex;   
-    flex-wrap: wrap;    
-    gap: 22px
-}
-
-section.blog-posts > .blog-preview-2 .postDetails {
-    flex: 1 0 248px;
-    width: 248px;
-    height: 188px;
-    overflow: hidden;
-    padding-right: 10px;
-}
-
-section.blog-posts > .blog-preview-2 .postDetails p {
-    text-overflow: ellipsis;
-    text-align: justify;
-}
-
-section.blog-posts > .blog-preview-3 .postDetails {
-    flex: 1 0 592px;
+section.blog-posts > .blog-preview-2 {
+    flex: 1 1 592px;
 }
 
 section.blog-posts > .blog-preview-3 {
-    flex: 1 0 432px;    
-    overflow: hidden;
+    flex: 1 1 100%;
+}
+/* End First Level Flex */
+
+/* Second Level Flex */
+
+section.blog-posts > .blog-preview-2 {
+    display: flex;
     flex-direction: column;
+}
+
+section.blog-posts > .blog-preview-3 {
+    display: flex;
+}
+
+/* End Second Level Flex */
+
+/* Third Level Flex */
+figure.postContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-preview-1 figure.postContainer > div.postImg-wrapper {
+    flex: 1 1 592px;
+}
+
+.blog-preview-2 figure.postContainer > div.postImg-wrapper {
+    flex: 1 1 320px;
+}
+
+.blog-preview-3 figure.postContainer > div.postImg-wrapper {
+    flex: 1 1 592px;
+}
+
+.blog-preview-2 figure.postContainer > div.postDetails {
+    flex: 1 1 228px;
+}
+
+.blog-preview-3 figure.postContainer > div.postDetails {
+    flex: 1 1 592px;
+}
+
+figure.postContainer > div.postImg-wrapper > img {
+    width: 100%;
+    height: auto;
+}
+/* End Third Level Flex */
+
+
+
+/* Temporary CSS */
+
+section.blog-posts, section.blog-posts > * {
+    border: 1px solid red;
+}
+
+section.blog-posts img {
+    /* object-fit: contain;
+    height: 228px; */
+    /* display: none; */
 }
