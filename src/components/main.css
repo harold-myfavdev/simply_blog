@@ -8,6 +8,7 @@ section.blog-posts img {
 section.blog-posts {
     margin-top: 60px;
     margin-bottom: 60px;
+    padding: 0px min(10px, max(0px, 10px - (100vw - 1216px)));  /* Responsive padding */
 }
 /* End Section Parent CSS */
 
