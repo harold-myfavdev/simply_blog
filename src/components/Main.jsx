@@ -18,7 +18,7 @@ export default function Main() {
             </section>
             <section className='blog-posts' id='all-blog-posts'>
                 <h2 className='blog-posts-header'>All blog posts</h2>     
-                <div className='blog-posts-wrapper blog-preview-1'>
+                <div className='blog-posts-wrapper blog-preview-all'>
                     <Posts limit={'none'} />
                 </div>
             </section>
