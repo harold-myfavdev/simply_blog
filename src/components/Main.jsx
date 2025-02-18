@@ -16,6 +16,12 @@ export default function Main() {
                     <Posts limit={1} />
                 </div>
             </section>
+            <section className='blog-posts' id='all-blog-posts'>
+                <h2 className='blog-posts-header'>All blog posts</h2>     
+                <div className='blog-posts-wrapper blog-preview-1'>
+                    <Posts limit={undefined} />
+                </div>
+            </section>
         </main>
     )
 }
