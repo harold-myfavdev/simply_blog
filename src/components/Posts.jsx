@@ -4,8 +4,9 @@ import Post from './Post';
 import postsData from '../api/data';
 
 export default function Posts(props) {
-    const postsDataLimit = postsData.slice(0, props.limit) /* Limit num of post rendered */ 
-
+    const limit = props.limit == 'none' ? undefined : props.limit;
+    const postsDataLimit = postsData.slice(0, limit); /* Limit num of post rendered */ 
+    
     const posts = postsDataLimit.map((post)=>(
             <Post 
                 key={post.id}
