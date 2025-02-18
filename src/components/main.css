@@ -99,7 +99,7 @@ section#all-blog-posts figure.postContainer {
 }
 
 .blog-preview-all figure.postContainer > div.postImg-wrapper {
-    flex: 0 1 384px;
+    /* flex: 0 1 384px; */
     height: 240px;
 }
 
