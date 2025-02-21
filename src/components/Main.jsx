@@ -1,4 +1,5 @@
 import Posts from './Posts';
+import Pagination from './Pagination';
 import './main.css'
 
 export default function Main() {
@@ -21,6 +22,7 @@ export default function Main() {
                 <div className='blog-posts-wrapper blog-preview-all'>
                     <Posts limit={'none'} />
                 </div>
+                <Pagination />
             </section>
         </main>
     )
