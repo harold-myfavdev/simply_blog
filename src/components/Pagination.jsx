@@ -1,5 +1,5 @@
 import './pagination.css'
-import arrow from '../assets/arrow.svg'
+import arrow from '../assets/Arrow.svg'
 
 export default function Pagination() {
     return (
