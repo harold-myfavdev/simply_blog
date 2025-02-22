@@ -36,7 +36,7 @@
 
 .pagination-item:first-child {
     column-gap: 12.17px;
-    flex: 0 0 auto;
+    /* flex: 0 0 auto; */
     margin-right: auto;
 }
 
@@ -48,10 +48,23 @@
 
 .pagination-item:last-child {
     column-gap: 12.17px;
-    flex: 0 0 auto;
+    /* flex: 0 0 auto; */
     margin-left: auto;
 }
 
 .pagination-item:last-child img {
     transform: rotateZ(180deg);
+}
+
+@media (max-width:390px) {
+    .pagination-item:first-child {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .pagination-item:last-child {
+        flex: 1 1 100%;
+        margin-top: 20px;
+    }
+    
 }
