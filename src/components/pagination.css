@@ -56,7 +56,7 @@
     transform: rotateZ(180deg);
 }
 
-@media (max-width:442px) {
+@media (max-width:460px) {
     .pagination-item:first-child {
         flex: 1 1 100%;
         margin-bottom: 20px;
