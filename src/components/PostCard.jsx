@@ -1,4 +1,4 @@
-export default function Post(props) {  
+export default function PostCard(props) {  
 
     return (
         <>
@@ -9,7 +9,7 @@ export default function Post(props) {
                 <div className="postDetails">
                     <p className="postLocation">
                         <a href={props.map} className="googleMap">View on Google Maps</a>
-                        <img src={props.marker} alt="Location Marker" />
+                        <img src={props.arrow} alt="arrow" />
                         {props.country}
                     </p>
                     <h2 className="postTitle">{props.postTitle}</h2>

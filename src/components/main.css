@@ -151,17 +151,6 @@ div.postDetails > .postDesc {
 div.postDetails > .postLocation > img {
     display: inline;    
     margin-left: 10px;
+    transform: rotateZ(125deg);    
 }
 /* End Fourth Level Flex */
-
-/* Temporary CSS */
-section.blog-posts, section.blog-posts > * {
-    /* border: 1px solid red; */
-}
-
-section.blog-posts img {
-    /* object-fit: contain;
-    height: 228px; */
-    /* display: none; */
-}
-/* End Temporary CSS */
