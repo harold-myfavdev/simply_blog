@@ -1,0 +1,39 @@
+.footer {    
+     padding: 30px min(10px, max(0px, 10px - (100vw - 1216px)));  /* Responsive padding */
+     display: flex;
+     flex-wrap: wrap-reverse;  
+     justify-content: center;  
+     align-items: center;
+     column-gap: 14px;     
+     font-size: 14px;       
+}
+
+.external-links {
+    list-style: none;
+    margin-right: auto;
+    flex: 0 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 14px;
+}
+
+.external-link-item {
+    flex: 1 0 max-content;
+}
+
+@media (max-width: 390px) {   
+    .external-link-item {
+        flex: 1 1 100%;
+        text-align: center; 
+    }       
+
+    .external-links {
+        padding-bottom: 30px;
+    }
+    
+}
+
+.external-links a {
+    text-decoration: none;
+}
