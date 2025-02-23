@@ -16,9 +16,18 @@ export default function Pagination(props) {
     return (
         <div className='pagination-wrapper'>
             <fieldset className='pagination'>                
-                <button className='pagination-item' disabled={pageNumbers.length < 10} onClick={() => props.setCurrentPage(prevPageNumber => prevPageNumber > 1 ? prevPageNumber - 1 : prevPageNumber)}><img src={arrow} alt="left-arrow" />Previous</button>
+                <button 
+                    className='pagination-item' 
+                    disabled={pageNumbers.length < 10 || props.currentPage == 1} 
+                    onClick={() => props.setCurrentPage(prevPageNumber => prevPageNumber > 1 ? prevPageNumber - 1 : prevPageNumber)}>
+                    <img src={arrow} alt="left-arrow" />Previous
+                </button>
                 {pages}
-                <button className='pagination-item' disabled={pageNumbers.length < 10} onClick={() => props.setCurrentPage(prevPageNumber => prevPageNumber < pageNumbers.length ? prevPageNumber + 1 : prevPageNumber)}>Next<img src={arrow} alt="right-arrow" /></button>
+                <button 
+                    className='pagination-item' 
+                    disabled={pageNumbers.length < 10 || props.currentPage == pageNumbers.length} 
+                    onClick={() => props.setCurrentPage(prevPageNumber => prevPageNumber < pageNumbers.length ? prevPageNumber + 1 : prevPageNumber)}>
+                    Next<img src={arrow} alt="right-arrow" /></button>
             </fieldset>
         </div>
     )
