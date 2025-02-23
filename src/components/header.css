@@ -246,6 +246,14 @@
         margin-right: 0;
     }   
 
+    .darkmode .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) {
+        background-color: var(--bg-color-darkmode);
+    }
+
+    .darkmode .navbar-burger-menu.active span, .darkmode .navbar-burger-menu span {
+        border-color: var(--text-color-darkmode)
+    }
+
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav {       
         display: flex;
         border-radius: 0px 0px 0px 5px;

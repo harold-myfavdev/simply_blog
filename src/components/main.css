@@ -99,28 +99,19 @@ section#all-blog-posts figure.postContainer {
 }
 
 .blog-preview-all figure.postContainer > div.postImg-wrapper {
-    /* flex: 0 1 384px; */
     height: 240px;
 }
 
 .blog-preview-1 figure.postContainer > div.postDetails {
     flex: 1 1 592px;
-    /* height: 172px; */
 }
 
 .blog-preview-2 figure.postContainer > div.postDetails {
     flex: 1 1 228px;
-    /* height: 200px; */
 }
 
 .blog-preview-3 figure.postContainer > div.postDetails {
     flex: 1 1 592px;
-    /* height: 246px; */
-}
-
-.blog-preview-all figure.postContainer > div.postDetails {
-    /* flex: 0 1 384px; */
-    /* height: 246px; */
 }
 
 figure.postContainer > div.postImg-wrapper > img {
