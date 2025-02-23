@@ -5,7 +5,7 @@ export default [
             src: "https://scrimba.com/links/travel-journal-japan-image-url",
             alt: "Mount Fuji"
         },
-        title: "Mount Fuji",
+        title: "Mount Fuji 1",
         country: "Japan",
         googleMapsLink: "https://maps.app.goo.gl/6RLYZDuuuqJ7kNGZ9",
         dates: "12 Jan, 2021 - 24 Jan, 2021",
@@ -17,8 +17,8 @@ export default [
             src: "https://scrimba.com/links/travel-journal-australia-image-url",
             alt: "Sydney Opera House"
         },
-        title: "Sydney Opera House",
-        country: "Australia",
+        title: "Sydney Opera House 2",
+        country: "Australia 2",
         googleMapsLink: "https://maps.app.goo.gl/Zr17SCrsJeCEKMd36",
         dates: "27 May, 2021 - 8 Jun, 2021",
         text: "The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings."
@@ -29,7 +29,7 @@ export default [
             src: "https://scrimba.com/links/travel-journal-norway-image-url",
             alt: "Geirangerfjord"
         },
-        title: "Geirangerfjord",
+        title: "Geirangerfjord 3",
         country: "Norway",
         googleMapsLink: "https://maps.app.goo.gl/fhkJuBhmFDv47tiB7",
         dates: "01 Oct, 2021 - 18 Nov, 2021",
@@ -41,7 +41,7 @@ export default [
             src: "https://scrimba.com/links/travel-journal-japan-image-url",
             alt: "Mount Fuji"
         },
-        title: "Mount Fuji",
+        title: "Mount Fuji 4",
         country: "Japan",
         googleMapsLink: "https://maps.app.goo.gl/6RLYZDuuuqJ7kNGZ9",
         dates: "12 Jan, 2021 - 24 Jan, 2021",
@@ -53,8 +53,8 @@ export default [
             src: "https://scrimba.com/links/travel-journal-australia-image-url",
             alt: "Sydney Opera House"
         },
-        title: "Sydney Opera House",
-        country: "Australia",
+        title: "Sydney Opera House 5",
+        country: "Australia 5",
         googleMapsLink: "https://maps.app.goo.gl/Zr17SCrsJeCEKMd36",
         dates: "27 May, 2021 - 8 Jun, 2021",
         text: "The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings."
@@ -65,7 +65,7 @@ export default [
             src: "https://scrimba.com/links/travel-journal-norway-image-url",
             alt: "Geirangerfjord"
         },
-        title: "Geirangerfjord",
+        title: "Geirangerfjord 6",
         country: "Norway",
         googleMapsLink: "https://maps.app.goo.gl/fhkJuBhmFDv47tiB7",
         dates: "01 Oct, 2021 - 18 Nov, 2021",
@@ -77,7 +77,7 @@ export default [
             src: "https://scrimba.com/links/travel-journal-japan-image-url",
             alt: "Mount Fuji"
         },
-        title: "Mount Fuji",
+        title: "Mount Fuji 7",
         country: "Japan",
         googleMapsLink: "https://maps.app.goo.gl/6RLYZDuuuqJ7kNGZ9",
         dates: "12 Jan, 2021 - 24 Jan, 2021",
@@ -89,7 +89,7 @@ export default [
             src: "https://scrimba.com/links/travel-journal-australia-image-url",
             alt: "Sydney Opera House"
         },
-        title: "Sydney Opera House",
+        title: "Sydney Opera House 8",
         country: "Australia",
         googleMapsLink: "https://maps.app.goo.gl/Zr17SCrsJeCEKMd36",
         dates: "27 May, 2021 - 8 Jun, 2021",
@@ -101,7 +101,7 @@ export default [
             src: "https://scrimba.com/links/travel-journal-norway-image-url",
             alt: "Geirangerfjord"
         },
-        title: "Geirangerfjord",
+        title: "Geirangerfjord 9",
         country: "Norway",
         googleMapsLink: "https://maps.app.goo.gl/fhkJuBhmFDv47tiB7",
         dates: "01 Oct, 2021 - 18 Nov, 2021",
@@ -113,7 +113,7 @@ export default [
             src: "https://scrimba.com/links/travel-journal-japan-image-url",
             alt: "Mount Fuji"
         },
-        title: "Mount Fuji",
+        title: "Mount Fuji 10",
         country: "Japan",
         googleMapsLink: "https://maps.app.goo.gl/6RLYZDuuuqJ7kNGZ9",
         dates: "12 Jan, 2021 - 24 Jan, 2021",
@@ -125,7 +125,7 @@ export default [
             src: "https://scrimba.com/links/travel-journal-australia-image-url",
             alt: "Sydney Opera House"
         },
-        title: "Sydney Opera House",
+        title: "Sydney Opera House 11",
         country: "Australia",
         googleMapsLink: "https://maps.app.goo.gl/Zr17SCrsJeCEKMd36",
         dates: "27 May, 2021 - 8 Jun, 2021",
@@ -137,7 +137,7 @@ export default [
             src: "https://scrimba.com/links/travel-journal-norway-image-url",
             alt: "Geirangerfjord"
         },
-        title: "Geirangerfjord",
+        title: "Geirangerfjord 12",
         country: "Norway",
         googleMapsLink: "https://maps.app.goo.gl/fhkJuBhmFDv47tiB7",
         dates: "01 Oct, 2021 - 18 Nov, 2021",

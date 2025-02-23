@@ -1,20 +1,25 @@
 import './pagination.css'
 import arrow from '../assets/Arrow.svg'
 
-export default function Pagination() {
+export default function Pagination(props) {
+    let pageNumbers = [];
+
+    for(let i = 1; i <= Math.ceil(props.totalPosts/props.blogsPerPage); i++) {
+        pageNumbers.push(i)
+    }
+
+    const pages = pageNumbers.map((pageNumber, index) => (
+        <button className='pagination-item' key={index} onClick={() => props.setCurrentPage(pageNumber)}>{pageNumber}</button>
+    ))
+    console.log(pages)
+    console.log(props)
     return (
-        <nav className='pagination-wrapper'>
-            <ul className='pagination'>                
-                <li className='pagination-item'><img src={arrow} alt="left-arrow" /><a href=""> Previous</a></li>
-                <li className='pagination-item'><a href="">1</a></li>
-                <li className='pagination-item'><a href="">2</a></li>
-                <li className='pagination-item'><a href="">3</a></li>
-                <li className='pagination-item'><a href="">...</a></li>            
-                <li className='pagination-item'><a href="">8</a></li>
-                <li className='pagination-item'><a href="">9</a></li>
-                <li className='pagination-item'><a href="">10</a></li>
-                <li className='pagination-item'><a href="">Next</a><img src={arrow} alt="right-arrow" /></li>
-            </ul>
-        </nav>
+        <div className='pagination-wrapper'>
+            <fieldset className='pagination'>                
+                <button className='pagination-item'><img src={arrow} alt="left-arrow" />Previous</button>
+                {pages}
+                <button className='pagination-item'>Next<img src={arrow} alt="right-arrow" /></button>
+            </fieldset>
+        </div>
     )
 }

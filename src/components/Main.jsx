@@ -6,7 +6,10 @@ import CardData from '../api/data';
 
 export default function Main() {
     const [ postCardData, setPostCardData ] = useState([]);
-    const [ recentBlog, setRecentBlog ] = useState([])
+    const [ recentBlog, setRecentBlog ] = useState([]);
+    const [ currentPage, setCurrentPage ] = useState(1);
+    const [ blogsPerPage, setBlogsPerPage ] = useState(6);    
+    const [ allBlogs, setAllBlogs ] = useState([]);
 
     useEffect(() => {
         setPostCardData(CardData);                                
@@ -19,14 +22,17 @@ export default function Main() {
                 [recentBlogs[0]],
                 recentBlogs.slice(1,3),
                 [recentBlogs[3]]
-            ])            
-            console.log(recentBlogs)
-            console.log(postCardData)
+            ])                        
         }
     },[postCardData])
 
-    console.log(postCardData)
-    console.log(recentBlog)
+    useEffect(() => {        
+        const lastPostIndex = currentPage * blogsPerPage;
+        const firstPostIndex = lastPostIndex - blogsPerPage;
+        setAllBlogs(postCardData.slice(firstPostIndex, lastPostIndex));
+        console.log(allBlogs);
+        console.log(postCardData);
+    },[postCardData, currentPage])    
 
     return (
         <main>
@@ -45,9 +51,9 @@ export default function Main() {
             <section className='blog-posts' id='all-blog-posts'>
                 <h2 className='blog-posts-header'>All blog posts</h2>     
                 <div className='blog-posts-wrapper blog-preview-all'>
-                    <PostCards blogs={postCardData} />
+                    <PostCards blogs={allBlogs} />
                 </div>
-                <Pagination />
+                <Pagination totalPosts={postCardData.length} blogsPerPage={blogsPerPage} setCurrentPage={setCurrentPage}/>
             </section>
         </main>
     )

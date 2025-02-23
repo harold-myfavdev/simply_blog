@@ -2,7 +2,7 @@ import Arrow from '/src/assets/Arrow.svg';
 import PostCard from './PostCard';
 
 export default function PostCards(props) {
-    console.log(props)
+
     const postCards = props.blogs?.map((post)=>(
             <PostCard 
                 key={post.id}
