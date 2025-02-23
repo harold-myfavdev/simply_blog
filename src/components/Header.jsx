@@ -1,11 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './header.css';
 
 export default function Header() {
     const [isActive, setIsActive] = useState("");
+    const [isDarkMode, setIsDarkMode] = useState(false);
     function toggleIsActive() {
         setIsActive((prevValue) =>  prevValue == "" ? "active" : "");        
     }
+
+    function toggleIsDarkMode() {                
+        setIsDarkMode(prevValue => !prevValue);        
+    }
+    
+    useEffect(() => {
+        isDarkMode ? (document.body.classList.add("darkmode")) : document.body.classList.remove("darkmode")        
+    },[isDarkMode])
 
     return (
         <header className='header'>
@@ -25,7 +34,7 @@ export default function Header() {
                     <li className="nav-items"><a className="nav-links" href="/newsletter">Newsletter</a></li>                
                 </ul>
                 <fieldset className='navbar-toggle' aria-label='Choose dark mode or light mode'>
-                    <input type="checkbox" className='navbar-toggle-theme' id="toggle-theme" value="light" name='theme'/>
+                    <input type="checkbox" className="navbar-toggle-theme" id="toggle-theme" value={isDarkMode ? "dark" : "light"} name='theme'onChange={toggleIsDarkMode}/>
                     <label htmlFor="toggle-theme" className="image-container">
                         <span className='circle'></span>
                         <div className='sun-moon-container'>

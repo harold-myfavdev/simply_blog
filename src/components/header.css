@@ -266,7 +266,6 @@
 
     .navbar-burger-menu-wrapper:has(.navbar-burger-menu.active) ~ .navbar-nav .nav-links {
         display: block;
-        color: black;        
         width: 100%;
         padding: 4px 8px;
     }

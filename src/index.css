@@ -10,10 +10,13 @@
 :root {
     --text-color: black;
     --bg-color: white;
+    --text-color-darkmode: white;
+    --bg-color-darkmode: #090D1F;
 }
 
 body {
     background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 /* CSS Custom Styles */
@@ -23,3 +26,14 @@ body {
     line-height: 24px;
     font-family: Inter, 'Times New Roman', Times, serif;
 }
+
+.darkmode, 
+.darkmode *:not(fieldset.navbar-toggle, fieldset.navbar-toggle *) {
+    background-color: var(--bg-color-darkmode);
+    color: var(--text-color-darkmode);
+}
+
+.darkmode fieldset.pagination .pagination-item.active {
+    background-color: #7F56D9;
+}
+
