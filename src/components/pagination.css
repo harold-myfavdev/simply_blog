@@ -23,13 +23,6 @@
     background-color: white;
 }
 
-.pagination-item > a {
-    text-decoration: none;
-    line-height: 20px;
-    font-weight: 500;
-    font-size: 14px;
-}
-
 .pagination-item:not(:first-child,:last-child){
     flex: 0 0 40px;
     text-align: center;
@@ -40,19 +33,16 @@
 
 .pagination-item:first-child {
     column-gap: 12.17px;
-    /* flex: 0 0 auto; */
     margin-right: auto;
 }
 
-.pagination-item:nth-child(2) {
-    /* border: 1px solid black; */
+.pagination-item.active {
     background-color: #F9F5FF;
     color: #7F56D9;    
 }
 
 .pagination-item:last-child {
     column-gap: 12.17px;
-    /* flex: 0 0 auto; */
     margin-left: auto;
 }
 

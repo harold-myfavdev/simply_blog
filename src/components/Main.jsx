@@ -53,7 +53,7 @@ export default function Main() {
                 <div className='blog-posts-wrapper blog-preview-all'>
                     <PostCards blogs={allBlogs} />
                 </div>
-                <Pagination totalPosts={postCardData.length} blogsPerPage={blogsPerPage} setCurrentPage={setCurrentPage}/>
+                <Pagination totalPosts={postCardData.length} blogsPerPage={blogsPerPage} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
             </section>
         </main>
     )
