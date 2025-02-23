@@ -218,6 +218,10 @@
     display: block;
 }
 
+.darkmode .header-title {
+    border-color: var(--text-color-darkmode);
+}
+
 .header-title {    
     line-height: normal;
     font-size: min(189px, max(48px, 48px + (100vw - 375px) * 0.17)); /* Responsive font size */

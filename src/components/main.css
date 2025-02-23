@@ -139,9 +139,15 @@ div.postDetails > .postDesc {
     text-align: justify;
 }
 
-div.postDetails > .postLocation > img {
+div.postDetails > .postLocation > svg {
     display: inline;    
     margin-left: 10px;
     transform: rotateZ(125deg);    
+}
+
+.darkmode div.postDetails > .postLocation > svg {
+    color: white;
+    /* background-color: white; */
+    /* border-color: white; */
 }
 /* End Fourth Level Flex */

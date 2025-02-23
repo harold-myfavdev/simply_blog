@@ -9,7 +9,7 @@ export default function PostCard(props) {
                 <div className="postDetails">
                     <p className="postLocation">
                         <a href={props.map} className="googleMap">View on Google Maps</a>
-                        <img src={props.arrow} alt="arrow" />
+                        {props.arrow}
                         {props.country}
                     </p>
                     <h2 className="postTitle">{props.postTitle}</h2>
