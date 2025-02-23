@@ -10,9 +10,9 @@ export default function PostCards(props) {
                 postImg={post.img.src} 
                 postImgAlt={post.img.alt}
                 postTitle={post.title}
-                postCountry={post.country}
+                postAuthor={post.author}
                 map={post.googleMapsLink}
-                postDateRange={post.dates}            
+                postDate={post.date}            
                 postDesc={post.text}
             />
         )

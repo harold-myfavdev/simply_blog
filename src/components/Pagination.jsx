@@ -1,5 +1,5 @@
 import './pagination.css'
-import arrow from '../assets/Arrow.svg'
+import Arrow from '../assets/Arrow.svg?react'
 
 export default function Pagination(props) {
     let pageNumbers = [];
@@ -20,14 +20,17 @@ export default function Pagination(props) {
                     className='pagination-item' 
                     disabled={pageNumbers.length < 10 || props.currentPage == 1} 
                     onClick={() => props.setCurrentPage(prevPageNumber => prevPageNumber > 1 ? prevPageNumber - 1 : prevPageNumber)}>
-                    <img src={arrow} alt="left-arrow" />Previous
+                    {<Arrow />}
+                    Previous
                 </button>
                 {pages}
                 <button 
                     className='pagination-item' 
                     disabled={pageNumbers.length < 10 || props.currentPage == pageNumbers.length} 
                     onClick={() => props.setCurrentPage(prevPageNumber => prevPageNumber < pageNumbers.length ? prevPageNumber + 1 : prevPageNumber)}>
-                    Next<img src={arrow} alt="right-arrow" /></button>
+                    Next
+                    {<Arrow />}
+                </button>
             </fieldset>
         </div>
     )

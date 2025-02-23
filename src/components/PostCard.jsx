@@ -7,13 +7,15 @@ export default function PostCard(props) {
                     <img src={props.postImg} alt={props.postImgAlt} className="postImg"/>
                 </div>
                 <div className="postDetails">
-                    <p className="postLocation">
-                        <a href={props.map} className="googleMap">View on Google Maps</a>
+                    <div className="postAuthorDate-wrapper">
+                        <p className="postAuthor">{props.postAuthor}</p>
+                        <span className="dot"></span>
+                        <p className="postDate">{props.postDate}</p>
+                    </div>
+                    <h2 className="postTitle">
+                        {props.postTitle}
                         {props.arrow}
-                        {props.country}
-                    </p>
-                    <h2 className="postTitle">{props.postTitle}</h2>
-                    <p className="postDate">{props.postDateRange}</p>
+                    </h2>
                     <p className="postDesc">{props.postDesc}</p>
                 </div>
             </figure>

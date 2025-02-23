@@ -46,7 +46,7 @@
     margin-left: auto;
 }
 
-.pagination-item:last-child img {
+.pagination-item:last-child svg {
     transform: rotateZ(180deg);
 }
 

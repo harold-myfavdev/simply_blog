@@ -130,6 +130,28 @@ div.postDetails {
     overflow: hidden;    
 }
 
+div.postDetails > .postAuthorDate-wrapper {
+    display: flex;      
+    align-items: center;
+    column-gap: 5px;
+    color: #6941C6;
+    font-weight: bold;
+}
+
+.darkmode div.postDetails .dot, 
+.darkmode div.postDetails .postAuthorDate-wrapper > * {
+    color: #6941C6;
+}
+
+div.postDetails .dot {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #6941C6;
+    background-color: #6941C6;
+    border-radius: 5px;
+}
+
+
 div.postDetails > .postDesc {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -139,13 +161,19 @@ div.postDetails > .postDesc {
     text-align: justify;
 }
 
-div.postDetails > .postLocation > svg {
+div.postDetails > .postTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div.postDetails > .postTitle > svg {
     display: inline;    
     margin-left: 10px;
     transform: rotateZ(125deg);    
 }
 
-.darkmode div.postDetails > .postLocation > svg {
+.darkmode div.postDetails > .postTitle > svg {
     color: white;
     /* background-color: white; */
     /* border-color: white; */
