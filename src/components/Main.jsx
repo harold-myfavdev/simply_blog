@@ -30,8 +30,6 @@ export default function Main() {
         const lastPostIndex = currentPage * blogsPerPage;
         const firstPostIndex = lastPostIndex - blogsPerPage;
         setAllBlogs(postCardData.slice(firstPostIndex, lastPostIndex));
-        console.log(allBlogs);
-        console.log(postCardData);
     },[postCardData, currentPage])    
 
     return (

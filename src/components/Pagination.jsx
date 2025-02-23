@@ -11,8 +11,7 @@ export default function Pagination(props) {
     const pages = pageNumbers.map((pageNumber, index) => (
         <button className={pageNumber == props.currentPage ? 'pagination-item active' : 'pagination-item'} key={index} onClick={() => props.setCurrentPage(pageNumber)}>{pageNumber}</button>
     ))
-    console.log(pages)
-    console.log(props)
+
     return (
         <div className='pagination-wrapper'>
             <fieldset className='pagination'>                
