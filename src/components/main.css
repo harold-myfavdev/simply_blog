@@ -170,6 +170,7 @@ div.postDetails > .postTitle > svg {
     display: inline;    
     margin-left: 10px;
     transform: rotateZ(125deg);    
+    cursor: pointer;
 }
 
 .darkmode div.postDetails > .postTitle > svg {
