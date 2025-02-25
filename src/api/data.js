@@ -14,7 +14,7 @@ export default [
     {
         id: 2,
         img: {
-            src: "https://scrimba.com/links/travel-journal-australia-image-url",
+            src: "https://ipfs-chainsafe.dev/ipfs/QmSCj1RdBXRWZouxZdnjCDHqKkeTkkc8UtWFiScbB7V3vD",
             alt: "Sydney Opera House"
         },
         title: "Sydney Opera House 2",
@@ -26,7 +26,7 @@ export default [
     {
         id: 3,
         img: {
-            src: "https://scrimba.com/links/travel-journal-norway-image-url",
+            src: "https://ipfs-chainsafe.dev/ipfs/QmQf2fgNuVQoKEYgJoskJ44ysHGYXVJn1Jf9LZoDaydXPq",
             alt: "Geirangerfjord"
         },
         title: "Geirangerfjord 3",
