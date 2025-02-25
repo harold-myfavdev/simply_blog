@@ -2,7 +2,7 @@ export default [
     {
         id: 1,
         img: {
-            src: "https://scrimba.com/links/travel-journal-japan-image-url",
+            src: "https://ipfs-chainsafe.dev/ipfs/QmPr8Gum5Ca5UFmZ5ocvpC9Mop13HKd9DpHw2iVqXi9SPu",
             alt: "Mount Fuji"
         },
         title: "Mount Fuji 1",
