@@ -2,7 +2,7 @@ import Arrow from '/src/assets/Arrow.svg?react';
 import PostCard from './PostCard';
 
 export default function PostCards(props) {
-    const ipfsUrl = "https://ipfs.chainsafe.io/ipfs/";    
+    const ipfsUrl = "https://ipfs-chainsafe.dev/ipfs/";    
     console.log(props);
 
     const postCards = props.blogs?.map((post)=>(
