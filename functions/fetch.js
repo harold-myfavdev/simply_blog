@@ -1,14 +1,14 @@
 export async function onRequest({request, env, ctx}) {
-    const allowedDomain = "https://myfav.dev"; // Change this to your actual domain
+    // const allowedDomain = "https://myfav.dev"; 
 
-    const origin = request.headers.get("Origin") || request.headers.get("Referer");
+    // const origin = request.headers.get("Origin") || request.headers.get("Referer");
 
-    if (!origin || !origin.startsWith(allowedDomain)) {
-        return new Response(JSON.stringify({ error: "Unauthorized request" }), {
-            status: 403,
-            headers: { "content-type": "application/json" }
-        });
-    }
+    // if (!origin || !origin.startsWith(allowedDomain)) {
+    //     return new Response(JSON.stringify({ error: "Unauthorized request" }), {
+    //         status: 403,
+    //         headers: { "content-type": "application/json" }
+    //     });
+    // }
 
     const API_URL = env.NOCODB_URL;
     const token = env.NOCODB_TOKEN;
