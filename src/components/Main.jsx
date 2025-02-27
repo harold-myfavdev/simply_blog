@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import PostCards from './PostCards';
 import Pagination from './Pagination';
 import './main.css'
-import CardData from '../api/data';
+// import CardData from '../api/data';
 
 export default function Main() {
     const [ postCardData, setPostCardData ] = useState([]);
@@ -10,9 +10,30 @@ export default function Main() {
     const [ currentPage, setCurrentPage ] = useState(1);
     const [ blogsPerPage, setBlogsPerPage ] = useState(6);    
     const [ allBlogs, setAllBlogs ] = useState([]);
+  
+    async function fetchData() {
+        try {
+            // const fetchApi = "https://myfav.dev/fetch";
+            const fetchApi = "http://127.0.0.1:8788/fetch";
+            const response = await fetch(fetchApi, {
+                method: "GET",
+                headers: {
+                    "Origin": window.location.origin 
+                }
+            });
+    
+            if (!response.ok) throw new Error(`Request failed: ${response.status}`);
+    
+            const result = await response.json();
+            setPostCardData(result.list);
+            console.log(result.list);
+        } catch (err) {
+            console.error("Error fetching data:", err);
+        }
+    }
 
     useEffect(() => {
-        setPostCardData(CardData);                                
+        fetchData();                                
     },[]);    
     
     useEffect(() => {
