@@ -13,8 +13,8 @@ export default function Main() {
   
     async function fetchData() {
         try {
-            // const fetchApi = "https://myfav.dev/fetch";
-            const fetchApi = "http://127.0.0.1:8788/fetch";
+            const fetchApi = "https://myfav.dev/fetch";
+            // const fetchApi = "http://127.0.0.1:8788/fetch";
             const response = await fetch(fetchApi, {
                 method: "GET",
                 headers: {
