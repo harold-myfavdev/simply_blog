@@ -28,6 +28,7 @@ export async function onRequest({request, env, ctx}) {
         return new Response(JSON.stringify(data), {
             headers: {
                 'content-type': 'application/json',
+                "Access-Control-Allow-Origin": "*",
             },
             status: 200
         })
