@@ -37,3 +37,11 @@ body {
     background-color: #7F56D9;
 }
 
+.darkmode button.pagination-item[disabled] {    
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.darkmode button.pagination-item[disabled] svg path{        
+    color: rgba(255, 255, 255, 0.3);  
+    
+}

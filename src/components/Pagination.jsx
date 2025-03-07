@@ -17,7 +17,7 @@ export default function Pagination(props) {
             <fieldset className='pagination'>                
                 <button 
                     className='pagination-item' 
-                    disabled={pageNumbers.length < 10 || props.currentPage == 1} 
+                    disabled={pageNumbers.length < 1 || props.currentPage == 1} 
                     onClick={() => props.setCurrentPage(prevPageNumber => prevPageNumber > 1 ? prevPageNumber - 1 : prevPageNumber)}>
                     {<Arrow />}
                     Previous
@@ -25,7 +25,7 @@ export default function Pagination(props) {
                 {pages}
                 <button 
                     className='pagination-item' 
-                    disabled={pageNumbers.length < 10 || props.currentPage == pageNumbers.length} 
+                    disabled={pageNumbers.length < 1 || props.currentPage == pageNumbers.length} 
                     onClick={() => props.setCurrentPage(prevPageNumber => prevPageNumber < pageNumbers.length ? prevPageNumber + 1 : prevPageNumber)}>
                     Next
                     {<Arrow />}

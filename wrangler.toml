@@ -11,3 +11,7 @@ database_id = "xxxx-xxxx-xxxx-xxxx-xxxx"
 binding = "BLOGS_DB"
 database_name = "blogs-db"
 database_id = "d7de5236-c467-4077-8b49-19b67b0d452e"
+
+[vars]
+NOCODB_URL = "https://app.nocodb.com/api/v2/tables/mdyyn4wkfbnrize/records?offset=0&limit=25&where=&viewId=vwez03cz52plspit"
+NOCODB_TOKEN = "HSVPBRCQRFCL9Gn_m3vgTsF75WVs1eURVN5-8L-H"   

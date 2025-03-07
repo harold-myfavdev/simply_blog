@@ -26,7 +26,7 @@ export default function Main() {
     
             const result = await response.json();
             setPostCardData(result.list);
-            console.log(result.list);
+            // console.log(result.list);
         } catch (err) {
             console.error("Error fetching data:", err);
         }

@@ -131,11 +131,16 @@ div.postDetails {
 }
 
 div.postDetails > .postAuthorDate-wrapper {
-    display: flex;      
+    display: flex;    
+    flex-wrap: wrap;  
     align-items: center;
     column-gap: 10px;
     color: #6941C6;
     font-weight: bold;
+}
+
+div.postDetails > .postAuthorDate-wrapper > * {
+    flex: 0 0 auto;
 }
 
 .darkmode div.postDetails .dot, 
@@ -164,6 +169,7 @@ div.postDetails > .postTitle {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    text-align: justify;
 }
 
 div.postDetails > .postTitle > svg {
@@ -171,6 +177,7 @@ div.postDetails > .postTitle > svg {
     margin-left: 10px;
     transform: rotateZ(125deg);    
     cursor: pointer;
+    flex: 0 0 14px;
 }
 
 .darkmode div.postDetails > .postTitle > svg {
