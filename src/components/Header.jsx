@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router';
 import { useEffect, useState } from 'react';
 import './header.css';
 
@@ -19,7 +20,7 @@ export default function Header() {
     return (
         <header className='header'>
             <nav className="navbar">
-                <a href="/" className='navbar-brand'>SimplyBlog</a>
+                <Link to="/" className='navbar-brand'>SimplyBlog</Link>
                 <div className='navbar-burger-menu-wrapper'>
                     <div className={("navbar-burger-menu " + isActive).trim()} onClick={toggleIsActive}>
                         <span></span>
@@ -28,10 +29,10 @@ export default function Header() {
                     </div>
                 </div>
                 <ul className='navbar-nav'>
-                    <li className="nav-items"><a className="nav-links" href="/blog">Blog</a></li>
-                    <li className="nav-items"><a className="nav-links" href="/projects">Projects</a></li>
-                    <li className="nav-items"><a className="nav-links" href="/about">About</a></li>
-                    <li className="nav-items"><a className="nav-links" href="/newsletter">Newsletter</a></li>                
+                    <li className="nav-items"><NavLink className={({ isActive }) => (isActive ? "nav-links active" : "nav-links")} to="/blog">Blog</NavLink></li>
+                    <li className="nav-items"><NavLink className={({ isActive }) => (isActive ? "nav-links active" : "nav-links")} to="/projects">Projects</NavLink></li>
+                    <li className="nav-items"><NavLink className={({ isActive }) => (isActive ? "nav-links active" : "nav-links")} to="/about">About</NavLink></li>
+                    <li className="nav-items"><NavLink className={({ isActive }) => (isActive ? "nav-links active" : "nav-links")} to="/newsletter">Newsletter</NavLink></li>                
                 </ul>
                 <fieldset className='navbar-toggle' aria-label='Choose dark mode or light mode'>
                     <input type="checkbox" className="navbar-toggle-theme" id="toggle-theme" value={isDarkMode ? "dark" : "light"} name='theme'onChange={toggleIsDarkMode}/>
@@ -52,8 +53,7 @@ export default function Header() {
                         </div>
                     </label>                    
                 </fieldset>
-            </nav>
-            <h1 className='header-title'>SIMPLY BLOG</h1>
+            </nav>            
         </header>
     )
 }

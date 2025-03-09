@@ -1,41 +1,17 @@
 import { useState, useEffect } from 'react';
-import PostCards from './PostCards';
-import Pagination from './Pagination';
-import './main.css'
+import PostCards from '../components/PostCards';
+import Pagination from '../components/Pagination';
+import { usePostPreview } from '../context/PostPreviewContext';
+import './home.css'
 // import CardData from '../api/data';
 
-export default function Main() {
-    const [ postCardData, setPostCardData ] = useState([]);
+export default function Home() {
+    const { postCardData } = usePostPreview();
     const [ recentBlog, setRecentBlog ] = useState([]);
     const [ currentPage, setCurrentPage ] = useState(1);
     const [ blogsPerPage, setBlogsPerPage ] = useState(6);    
     const [ allBlogs, setAllBlogs ] = useState([]);
-  
-    async function fetchData() {
-        try {
-            const fetchApi = "https://myfav.dev/fetch";
-            // const fetchApi = "http://127.0.0.1:8788/fetch";
-            const response = await fetch(fetchApi, {
-                method: "GET",
-                headers: {
-                    "Origin": window.location.origin 
-                }
-            });
-    
-            if (!response.ok) throw new Error(`Request failed: ${response.status}`);
-    
-            const result = await response.json();
-            setPostCardData(result.list);
-            // console.log(result.list);
-        } catch (err) {
-            console.error("Error fetching data:", err);
-        }
-    }
-
-    useEffect(() => {
-        fetchData();                                
-    },[]);    
-    
+ 
     useEffect(() => {
         if (postCardData.length > 0) {
             let recentBlogs = postCardData.slice(0,4);
@@ -55,6 +31,7 @@ export default function Main() {
 
     return (
         <main>
+            <h1 className='header-title'>SIMPLY BLOG</h1>
             <section className='blog-posts' id='recent-blog-posts'>   
                 <h2 className='blog-posts-header'>Recent blog posts</h2>            
                 <div className='blog-posts-wrapper blog-preview-1'>

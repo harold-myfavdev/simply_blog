@@ -234,7 +234,24 @@
     text-align: center;
 }
 
+.nav-links.active {
+    border-bottom: 1px solid black;    
+}
+
+.darkmode .nav-links.active {
+    border-color: var(--text-color-darkmode);
+}
+
 @media (max-width: 833px) {
+    .nav-links.active {    
+        border-bottom: 0px;    
+        border-left: 4px solid black;    
+    }
+    
+    .darkmode .nav-links.active {
+        border-color: var(--text-color-darkmode);
+    }
+
     .navbar:has(.navbar-burger-menu.active) {
         position: relative;        
     }

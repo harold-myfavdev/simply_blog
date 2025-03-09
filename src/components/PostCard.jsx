@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 export default function PostCard(props) {  
 
     return (
@@ -14,7 +16,9 @@ export default function PostCard(props) {
                     </div>
                     <h2 className="postTitle">
                         {props.postTitle}
-                        {props.arrow}
+                        <Link to={`/blog/${props.postTitle.replace(/\s+/g, "-")}`} className="arrow">
+                            {props.arrow}
+                        </Link> 
                     </h2>
                     <p className="postDesc">{props.postDesc}</p>
                 </div>

@@ -172,7 +172,7 @@ div.postDetails > .postTitle {
     text-align: justify;
 }
 
-div.postDetails > .postTitle > svg {
+div.postDetails > .postTitle svg {
     display: inline;    
     margin-left: 10px;
     transform: rotateZ(125deg);    
@@ -180,7 +180,7 @@ div.postDetails > .postTitle > svg {
     flex: 0 0 14px;
 }
 
-.darkmode div.postDetails > .postTitle > svg {
+.darkmode div.postDetails > .postTitle svg {
     color: white;
     cursor: pointer;
 }
