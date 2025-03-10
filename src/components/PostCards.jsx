@@ -5,7 +5,7 @@ export default function PostCards(props) {
 
     const postCards = props.blogs?.map((post)=>(
             <PostCard 
-                key={post.postpreview_id}
+                key={post.Id}
                 arrow={<Arrow />} 
                 postImg={post.image_cover} 
                 postImgAlt={post.image_cover_alt}
@@ -13,7 +13,7 @@ export default function PostCards(props) {
                 postAuthor={post.author}                
                 postDate={post.publish_at}            
                 postDesc={post.description}
-                postId={post.postpreview_id}
+                postSlug={post.slug}
             />
         )
     )

@@ -6,15 +6,13 @@ import './blog.css';
 export default function Blog() {
     const { postCardData } = usePostPreview();    
     const recentBlog = postCardData.slice(0,4);
-    const { postId } = useParams();        
+    const { postSlug } = useParams();        
 
     return (
         <main>
             <section className='blog-post-main' id='main-blog-posts'>                
-                {postId ?
-                    <PostCards blogs={postCardData.filter(
-                        post => post.title === postId.replace(/-/g, " "))}
-                    />
+                {postSlug ?
+                    <PostCards blogs={postCardData.filter(post => post.slug === postSlug)} />
                     :
                     <PostCards blogs={postCardData.slice(0,1)}/>
                 }

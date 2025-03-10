@@ -16,7 +16,7 @@ export default function PostCard(props) {
                     </div>
                     <h2 className="postTitle">
                         {props.postTitle}
-                        <Link to={`/blog/${props.postTitle.replace(/\s+/g, "-")}`} className="arrow">
+                        <Link to={`/blog/${props.postSlug}`} className="arrow">
                             {props.arrow}
                         </Link> 
                     </h2>

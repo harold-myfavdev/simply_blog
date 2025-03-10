@@ -13,7 +13,7 @@ export default function App() {
                 <Route index element={<Home />} />
                 <Route path="blog" >
                     <Route index element={<Blog />} />
-                    <Route path=":postId" element={<Blog />} />                
+                    <Route path=":postSlug" element={<Blog />} />                
                 </Route>
                 <Route path="projects" element={<Projects />} />
                 <Route path="about" element={<About />} />
